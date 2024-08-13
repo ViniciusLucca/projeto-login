@@ -70,25 +70,30 @@ section#login > div#formulario
     height:200px;
     display: block;
 }
-p.formitem
+div.formitem
 {
     background-color:pink;
     margin-bottom: 7px;
     border-radius: 6px;
 }
 
-p.formitem input
+div.formitem span.material-icons
+{
+    /* width:20%; */
+}
+div.formitem input
 {
     border:none;
     background-color: lightblue;
     height:100%;
     padding:10px;
-    width:100%;
+    width:80%;
 }
 
 p
 {
-    margin:auto;
+    /* margin:auto; */
+    font-size: 0.8em;
 }
 
 h1
@@ -115,4 +120,10 @@ a
 {
     background-color: lightcyan;
     border: 2px solid lightskyblue;
+    display:inline;
+}
+
+label
+{
+    display: none;
 }

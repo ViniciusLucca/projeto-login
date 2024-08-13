@@ -25,6 +25,11 @@ Extra large devices (large laptops and desktops, 1200px and up) */
         width: 70%;
         height: 100%;
     }
+
+    p
+    {
+        font-size: 1em;
+    }
 }
 @media screen and (min-width:993px)
 {
@@ -44,6 +49,11 @@ Extra large devices (large laptops and desktops, 1200px and up) */
         float:left;
         width: 50%;
         height: 100%;
+    }
+
+    p
+    {
+        font-size: 1.2em;
     }
 
 }
