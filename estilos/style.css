@@ -32,9 +32,8 @@ main
 section#login
 {
     background-color: white;
-    width: 250px;;
-    height: 600px;
-    /* height: 500px; */
+    width: 250px;
+    height: 545px;
     
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
@@ -44,9 +43,6 @@ section#login
     left:50%;
     transform: translate(-50%,-50%);
     
-    /* padding:10px; */
-    /* vertical-align: middle; */
-
     overflow: hidden;
 
     transition: width .25s, height .25s;
@@ -67,19 +63,42 @@ section#login > div#imagem
 section#login > div#formulario
 {
     padding: 15px 15px 20px 15px;
-    height:200px;
+    height: 200px;
     display: block;
 }
 div.formitem
 {
-    background-color:pink;
+    background-color: rgba(255, 0, 43, 0);
     margin-bottom: 7px;
     border-radius: 6px;
+    height: 40px;
+
 }
 
+span.material-icons
+{
+    font-size: 20px;
+    width: min-content;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin-right:-5px;
+}
 div.formitem span.material-icons
 {
-    /* width:20%; */
+    top: -1px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-right:-5px;
+    padding: 0 5px;
+    color: white;
+    background-color: rgb(197, 97, 255);
+    border-radius: 8px 0 0 8px;
+}
+div.formitem input:focus-within
+{
+    background-color: white;
+    border: none;
 }
 div.formitem input
 {
@@ -87,13 +106,15 @@ div.formitem input
     background-color: lightblue;
     height:100%;
     padding:10px;
-    width:80%;
+    width:calc(100% - 39px);
+    border-radius: 0 8px 8px 0;
+    margin-right:-5px;
 }
 
 p
 {
-    /* margin:auto; */
     font-size: 0.8em;
+    margin-bottom: 15px;
 }
 
 h1
@@ -108,19 +129,25 @@ input[type=submit], a
     padding:10px;
     width:100%;
     margin:auto;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    margin-top: 13px;
     background-color: lightblue;
     border: none;
     display: block;
     text-align: center;
     font-weight: bold;
+    border-radius: 8px;
 }
 
 a
 {
-    background-color: lightcyan;
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
     border: 2px solid lightskyblue;
-    display:inline;
+    color:lightskyblue;
+    display:block;
+    border-radius: 8px;
+    width:100%;
 }
 
 label
